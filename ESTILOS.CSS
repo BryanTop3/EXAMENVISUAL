@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    border-radius: 20px;
+
+    border: solid 1px;
+    display: flex;
+    justify-content: space-between;
+
+    background: black;
+    align-items: center;
+    padding: 10px;
+
+    /*agregamos posicion y ancho para fijar el encabezado*/
+    position: fixed;/* para que se quede en la parte de arriba*/
+    top: 0;
+    width: 99%;
+    
+    
+
+}
+
+#logo-empresa{
+    
+    /*border: solid 1px;*/
+    display: flex;
+    align-items: center;
+    height: 120px;
+
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+   
+}
+
+#logo-empresa{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+#empresa{
+    font-size: 40px;
+}
+
+/*Aplicamos estilos a la barra de navegacion*/
+
+nav .link-nav{
+    padding: 15px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+
+    font-weight: bold; /*aplica negrita*/
+}
+
+nav .link-nav:hover{
+    background: orangered;
+    color: black;
+    border-radius: 100px;
+    padding: 20px;
+    
+
+
+}
+
+#seccion-articulos{
+    width: 80%;
+
+    margin: 20px auto;
+
+}
+
+#titulo{
+    font-size: 70px;
+    text-align: center;
+}
+
+#contenedor{
+    padding: 0;
+    margin-top: 150px;
+    grid-column: 1 / 9;
+    grid-row: 1;
+}
+
+body{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* grid-gap: 10px; */
+    grid-auto-rows: minmax(100px, auto);
+}
+
+main{
+
+    grid-column: 1  / 2;
+    grid-row: 1/3;
+}
+
+body{
+    background: linear-gradient(90deg, orange, white ) 
+
+}
+
